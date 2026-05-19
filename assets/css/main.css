@@ -324,19 +324,55 @@ button
     position: absolute;
     z-index: 5;
     top: 3.5vh;
-    left: 50%;
-
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 #intro .intro-logo img
 {
+    display: inline-block;
     width: clamp(190px, 25vw, 320px);
     height: auto;
     -webkit-filter: brightness(1.25) saturate(1.08) drop-shadow(0 6px 18px rgba(0,0,0,.28));
             filter: brightness(1.25) saturate(1.08) drop-shadow(0 6px 18px rgba(0,0,0,.28));
+}
+
+#intro .intro-lang-switch
+{
+    position: absolute;
+    z-index: 6;
+    top: 2.2rem;
+    right: 2.2rem;
+    font-size: 1.35rem;
+    letter-spacing: .08em;
+    padding: .55rem 1rem;
+    border: 1px solid rgba(255,255,255,.45);
+    border-radius: 999px;
+    background: rgba(0,0,0,.32);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.28);
+}
+
+#intro .intro-lang-switch a
+{
+    color: rgba(255,255,255,.74);
+    opacity: 1;
+}
+
+#intro .intro-lang-switch a.active
+{
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 1px 6px rgba(0,0,0,.35);
+}
+
+#intro .intro-lang-switch span
+{
+    margin: 0 .45rem;
+    color: rgba(255,255,255,.5);
+    opacity: 1;
 }
 
 #intro .container-mid
@@ -452,6 +488,12 @@ button
         width: clamp(160px, 30vw, 250px);
     }
 
+    #intro .intro-lang-switch
+    {
+        top: 1.8rem;
+        right: 1.6rem;
+    }
+
     #intro .container-mid h1
     {
         max-width: 12em;
@@ -470,6 +512,14 @@ button
     #intro .intro-logo img
     {
         width: clamp(130px, 42vw, 190px);
+    }
+
+    #intro .intro-lang-switch
+    {
+        top: 1.4rem;
+        right: 1.2rem;
+        font-size: 1.2rem;
+        padding: .45rem .8rem;
     }
 
     #intro .container-mid
@@ -663,6 +713,23 @@ button
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border: 4px solid rgba(255,255,255,.92);
+    -webkit-box-shadow: 0 0 0 10px rgba(255,255,255,.16), 0 18px 44px rgba(0,0,0,.45);
+            box-shadow: 0 0 0 10px rgba(255,255,255,.16), 0 18px 44px rgba(0,0,0,.45);
+    -webkit-transition: -webkit-transform .25s ease, -webkit-box-shadow .25s ease;
+    transition: -webkit-transform .25s ease, -webkit-box-shadow .25s ease;
+    -o-transition: transform .25s ease, box-shadow .25s ease;
+    transition: transform .25s ease, box-shadow .25s ease;
+    transition: transform .25s ease, box-shadow .25s ease, -webkit-transform .25s ease, -webkit-box-shadow .25s ease;
+}
+
+#work .showcase .item:hover .background-image
+{
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-box-shadow: 0 0 0 12px rgba(255,255,255,.2), 0 24px 52px rgba(0,0,0,.52);
+            box-shadow: 0 0 0 12px rgba(255,255,255,.2), 0 24px 52px rgba(0,0,0,.52);
 }
 
 #work .showcase .item .info

@@ -66,13 +66,14 @@ jQuery(document).ready(function($) {
         var $message = $("#contact-form-message");
         var $submitBtn = $form.find('button[type="submit"]');
         var submitButtonDefaultHtml = $submitBtn.data("default-label") || $submitBtn.html();
+        var sendingText = $form.data("sending-text") || "Sending...";
         $submitBtn.data("default-label", submitButtonDefaultHtml);
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var isValid = true;
 
         function setSubmitting(isSubmitting) {
             if (isSubmitting) {
-                $submitBtn.prop("disabled", true).text("Đang gửi...");
+                $submitBtn.prop("disabled", true).text(sendingText);
                 $form.addClass("submitting");
             } else {
                 $submitBtn.prop("disabled", false).html(submitButtonDefaultHtml);
