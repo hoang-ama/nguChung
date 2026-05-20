@@ -336,6 +336,20 @@ button
     height: auto;
     -webkit-filter: brightness(1.25) saturate(1.08) drop-shadow(0 6px 18px rgba(0,0,0,.28));
             filter: brightness(1.25) saturate(1.08) drop-shadow(0 6px 18px rgba(0,0,0,.28));
+    -webkit-transition: -webkit-transform .25s ease, -webkit-filter .25s ease;
+    transition: -webkit-transform .25s ease, -webkit-filter .25s ease;
+    -o-transition: transform .25s ease, filter .25s ease;
+    transition: transform .25s ease, filter .25s ease;
+    transition: transform .25s ease, filter .25s ease, -webkit-transform .25s ease, -webkit-filter .25s ease;
+}
+
+#intro .intro-logo:hover img
+{
+    -webkit-transform: translateY(-4px) scale(1.03);
+        -ms-transform: translateY(-4px) scale(1.03);
+            transform: translateY(-4px) scale(1.03);
+    -webkit-filter: brightness(1.32) saturate(1.14) drop-shadow(0 12px 24px rgba(0,0,0,.38));
+            filter: brightness(1.32) saturate(1.14) drop-shadow(0 12px 24px rgba(0,0,0,.38));
 }
 
 #intro .intro-lang-switch
@@ -875,6 +889,23 @@ button
        object-fit: contain;
     -o-object-position: center;
        object-position: center;
+    -webkit-filter: drop-shadow(0 4px 10px rgba(0,0,0,.24));
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,.24));
+    -webkit-transition: -webkit-transform .25s ease, -webkit-filter .25s ease;
+    transition: -webkit-transform .25s ease, -webkit-filter .25s ease;
+    -o-transition: transform .25s ease, filter .25s ease;
+    transition: transform .25s ease, filter .25s ease;
+    transition: transform .25s ease, filter .25s ease, -webkit-transform .25s ease, -webkit-filter .25s ease;
+}
+
+#about .clients .col-md-3:hover img,
+#about .clients .col-xs-6:hover img
+{
+    -webkit-transform: translateY(-4px) scale(1.03);
+        -ms-transform: translateY(-4px) scale(1.03);
+            transform: translateY(-4px) scale(1.03);
+    -webkit-filter: drop-shadow(0 10px 18px rgba(0,0,0,.34));
+            filter: drop-shadow(0 10px 18px rgba(0,0,0,.34));
 }
 
 
