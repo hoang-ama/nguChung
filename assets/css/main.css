@@ -820,6 +820,31 @@ button
     display: none;
 }
 
+html[lang="en"] #work .showcase
+{
+    gap: 1rem;
+}
+
+html[lang="en"] #work .showcase .item
+{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc((100% - 3rem) / 4);
+            flex: 0 0 calc((100% - 3rem) / 4);
+    max-width: calc((100% - 3rem) / 4);
+}
+
+html[lang="en"] #work .showcase .item .info .container-mid h5
+{
+    max-width: 290px;
+}
+
+html[lang="en"] #work .showcase .item .info .container-mid p
+{
+    max-width: 330px;
+    font-size: 1.7rem;
+    line-height: 1.35;
+}
+
 @media (max-width: 991px)
 {
     #work .showcase .item
