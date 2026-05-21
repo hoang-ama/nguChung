@@ -854,6 +854,13 @@ html[lang="en"] #work .showcase .item .info .container-mid p
         max-width: calc((100% - 1.8rem) / 2);
     }
 
+    html[lang="en"] #work .showcase .item
+    {
+        -ms-flex-preferred-size: calc((100% - 1.8rem) / 2);
+            flex-basis: calc((100% - 1.8rem) / 2);
+        max-width: calc((100% - 1.8rem) / 2);
+    }
+
     #work .showcase .item .background-image
     {
         width: min(32vw, 240px);
@@ -869,6 +876,18 @@ html[lang="en"] #work .showcase .item .info .container-mid p
     }
 
     #work .showcase .item
+    {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    html[lang="en"] #work .showcase
+    {
+        gap: 2.4rem;
+    }
+
+    html[lang="en"] #work .showcase .item
     {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
